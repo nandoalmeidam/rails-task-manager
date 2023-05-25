@@ -1,0 +1,8 @@
+<ul style="list-style-type: none;">
+  <% @tasks.each do |task| %>
+    <li>
+      <%= check_box_tag 'task_ids[]', task.id %>
+      <%= label_tag task.title %>
+    </li>
+  <% end %>
+</ul>
